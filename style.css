@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 500px;
+  overflow: hidden;
+  background-color: orange
+}
+
+ul li {
+  float: left;
+  border-right:1px solid #bbbbbb;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: rgb(127, 150, 255);
+}
+
+ul li a.active {
+  background-color: rgb(127, 150, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
