@@ -5,7 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Paralympics</title>
-</head>
+    <style>
+        div {
+    border: 1px solid red;}
+    body {
+  margin: 0;
+  padding: 0;
+}
+.container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 0.5fr;
+        height: 100vh;
+        grid-template-areas: 
+        "logo"
+        "body"
+        "footer"
+        ;
+    }
+    
+        .logo {
+            grid-area: logo;
+            background-color: wheat
+        }
+           
+        
+        .body {
+            grid-area: body;
+            background-color: wheat;
+
+        }
+        .footer {
+            grid-area: footer;
+            background-color: orange;
+            text-align: center;
+        }
+        .flexbox {
+	display: flex;
+	flex-wrap:wrap;
+
+}
+
+.child {
+	flex: 10%;
+	margin: 10px;
+	font-family: Verdana, serif;
+	font-size: 30px;}
+    </style>
 <body>
     <ul>
         <img src="olympic-logo-2024.png" width="100">
@@ -14,5 +60,13 @@
         <li><a href="summer.html">Summer Olympics</a></li>
         <li><a href="winter.html">Winter Olympics</a></li>
     </ul>
+    <div class="container">
+    <div class="logo"> <h1>What is Paralympics?</h1>
+        <h4>The Paralympics are major international multi-sport events for athletes with disabilities, held shortly after the Olympic Games and governed by the International Paralympic Committee (IPC).</h4>
+    </div>
+    <div class="body"></div>
+    <div class="footer">
+        <h3>@Olympics Website made by Daewon </h3>
+    </div>
 </body>
 </html>
