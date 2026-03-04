@@ -5,6 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Summer Olympics</title>
+    <style>
+        div {
+    border: 1px solid red;}
+    body {
+  margin: 0;
+  padding: 0;
+}
+.container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1.5fr 4fr 4fr 0.5fr;
+        height: 100vh;
+        grid-template-areas: 
+        "header header header"
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "footer footer footer"
+        ;
+    }
+    
+        .header {
+            grid-area: header;
+            background-color: wheat;
+            text-align: center;
+        }
+           
+        
+        .box1 {
+            grid-area: box1;
+            background-color: wheat;
+            text-align: center;
+
+        }
+        .box2 { 
+            grid-area: box2;
+            background-color: wheat;
+            text-align: center;
+        }
+        .box3 {
+            grid-area: box3;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box4 {
+            grid-area: box4;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box5 {
+            grid-area: box5;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box6 {
+            grid-area: box6;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .footer {
+            grid-area: footer;
+            background-color: orange;
+            text-align: center;
+}
+    </style>
 </head>
 <body>
     <ul>
@@ -16,14 +84,17 @@
     </ul>
     
 </body>
-<div class="conainer">
+<div class="container">
     <div class="header"></div>
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
-    <div class="box4"></div>
+    <div class="box4"> </div>
     <div class="box5"></div>
     <div class="box6"></div>
-    <div class="footer"></div>
+    <div class="footer">
+        <img src="olympic-logo-2024.png" width="100">
+        <h3>@Olympics Website made by Daewon </h3>
+    </div>
 </div>
 </html>
