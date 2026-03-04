@@ -5,7 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Paralympics</title>
-</head>
+    <style>
+        div {
+    border: 1px solid red;}
+    body {
+  margin: 0;
+  padding: 0;
+}
+.container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1.5fr 4fr 4fr 0.5fr;
+        height: 100vh;
+        grid-template-areas: 
+        "logo logo logo"
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "footer footer footer"
+        ;
+    }
+    
+        .logo {
+            grid-area: logo;
+            background-color: wheat;
+            text-align: center;
+        }
+           
+        
+        .box1 {
+            grid-area: box1;
+            background-color: wheat;
+            text-align: center;
+
+        }
+        .box2 { 
+            grid-area: box2;
+            background-color: wheat;
+            text-align: center;
+        }
+        .box3 {
+            grid-area: box3;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box4 {
+            grid-area: box4;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box5 {
+            grid-area: box5;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .box6 {
+            grid-area: box6;
+            background-color: wheat;
+             text-align: center;
+
+        }
+        .footer {
+            grid-area: footer;
+            background-color: orange;
+            text-align: center;
+        }
+        .body {
+	display: flex;
+	flex-wrap:wrap;
+    
+
+}
+
+.child {
+	flex: 30%;
+	margin: 10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 30px;}
+    
+    </style>
 <body>
     <ul>
         <img src="olympic-logo-2024.png" width="100">
@@ -14,5 +94,49 @@
         <li><a href="summer.html">Summer Olympics</a></li>
         <li><a href="winter.html">Winter Olympics</a></li>
     </ul>
+    <div class="container">
+    <div class="logo"> <h1>What is Paralympics?</h1>
+        <h3>The Paralympics are major international multi-sport events for athletes with disabilities, held shortly after the Olympic Games and governed by the International Paralympic Committee (IPC).</h3>
+        <h3> The Paralympic Games currently feature 29 sports: 23 Summer and 6 Winter sports.</h3>
+        <h1> 6 Main Sports</h1>
+    </div>
+    <div class="box1">
+     <h1><a href="https://www.paralympic.org/badminton"
+       target="_blank">Para Badminton</a></h1>
+        <img src="_119694703_gettyimages-1067398786-1.jpg" width="400">
+    <h4> Para badminton is the fastest racket sport at the Paralympics where players compete in singles and doubles events hitting a shuttlecock over the net without return to score points. Players can catch opponents with clear shots, drop shots, lift shots or smashes.</h4>
+    </div>
+    <div class="box2">
+        <h1><a href="https://www.paralympic.org/swimming"
+       target="_blank">Para Swimming</a></h1>
+               <img src="R (5).jpg" width="370">
+               <h4>Para swimming is competitive swimming for individuals with physical, visual, and intellectual impairments, featuring events like backstroke, breaststroke, butterfly, and freestyle.</h4>
+    </div>
+    <div class="box3"><h1><a href="https://athletics.ca/get-involved/para-athletics/"
+       target="_blank">Para Athetic</a></h1>
+    <img src="khvohi8nw5w6ix4fidib.avif" width="400">
+    <h4>Para-athletics is the sport of athletics practiced by people with disabilities, including physical, intellectual, and vision impairments</h4>
+</div>
+    <div class="box4"> <h1><a href="https://www.paralympic.org/alpine-skiing"
+       target="_blank">Para Alpine Skiing</a></h1>
+       <img src="R (6).jpg" width="400">
+       <h4>Para alpine skiing evolved from the efforts of veterans with disabilities in Germany and Austria following WWII.</h4>
+    </div>
+    <div class="box5">
+        <h1><a href="https://www.parafootball.com/"
+       target="_blank">Para Football</a></h1>
+       <img src="amputee_football_-_italian_and_french_national_teams_at_the_uefa_champions_festival_in_milan.jpeg" width="480">
+       <h4>Para Football is a foundation and worldwide body of football for persons with disabilities.</h4>
+    </div>
+    <div class="box6">
+        <h1><a href="https://paralympic.ca/sport/para-ice-hockey/"
+       target="_blank">Para Ice Hockey</a></h1>
+       <img src="hko-world-para-ice-hockey-championship-20240512.avif" width="480">
+       <h4>Para ice hockey is a fast-paced, physical sport played by male and female athletes with a physical impairment in the lower part of the body.</h4>
+    </div>
+    <div class="footer">
+        <img src="olympic-logo-2024.png" width="100">
+        <h3>@Olympics Website made by Daewon </h3>
+    </div>
 </body>
 </html>
