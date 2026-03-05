@@ -7,7 +7,64 @@
     <title>Winter Olympics</title>
 </head>
 <style>
-
+    div {
+    border: 1px solid red;}
+    body {
+  margin: 0;
+  padding: 0;
+    }
+    .container {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1.5fr 4fr 4fr 0.5fr;
+        height: 100vh;
+        grid-template-areas: 
+        "header header header"
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "footer footer footer"
+        ;
+    }
+     .header {
+        grid-area: header;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box1 {
+        grid-area: box1;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box2 {
+        grid-area: box2;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box3 {
+        grid-area: box3;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box4 {
+        grid-area: box4;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box5 {
+        grid-area: box5;
+        background-color: wheat;
+        text-align: center;
+     }
+     .box6 {
+        grid-area: box6;
+        background-color: wheat;
+        text-align: center;
+     }
+     .footer {
+        grid-area: footer;
+        background-color: wheat;
+        text-align: center;
+     }
 </style>
 <body>
     <ul>
